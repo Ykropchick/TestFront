@@ -30,7 +30,7 @@ export default {
         url: this.url
       }
       await axios
-          .post('http://parserali.me/scrape/', data)
+          .post('https://parserali.me/scrape/', data)
           .then(response =>{
             console.log(response.data)
           })
