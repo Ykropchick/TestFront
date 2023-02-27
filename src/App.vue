@@ -13,6 +13,7 @@
         </button>
       </div>
     </form>
+    {{this.response}}
   </div>
 </template>
 
@@ -22,6 +23,7 @@ export default {
   data(){
     return{
       url: '',
+      response: '',
     }
   },
   methods:{
@@ -32,7 +34,7 @@ export default {
       await axios
           .post('https://parserali.me/scrape/', data)
           .then(response =>{
-            console.log(response.data)
+            this.response = response.data
           })
           .catch(error =>{
             console.log(error)
