@@ -33,6 +33,7 @@ export default {
       await axios
           .post('https://parserali.me/scrape/', data)
           .then(response =>{
+		console.log(response)
             this.response = response.data
           })
           .catch(error =>{
