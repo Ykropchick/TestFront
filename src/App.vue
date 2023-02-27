@@ -13,7 +13,6 @@
         </button>
       </div>
     </form>
-    {{this.response}}
   </div>
 </template>
 
